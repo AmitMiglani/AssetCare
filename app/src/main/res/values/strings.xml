@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">AssetCare</string>
+    <string name="assets">Search Assets</string>
+    <string name="issue_type_heading">Epic</string>
+    <string name="assignee_type_heading">Unassigned</string>
+
+    <string-array name="issue_type_array">
+        <item>Epic</item>
+        <item>Story</item>
+        <item>Task</item>
+        <item>Bug</item>
+    </string-array>
+
+    <string-array name="assignee_type_array">
+        <item>Unassigned</item>
+    </string-array>
+
+    <string name="project_name_heading">Toyota Manager</string>
+
+    <string-array name="projects_array">
+        <item>Toyota Manager</item>
+    </string-array>
+
+
+    <!--barcode-->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+    <string name="asset_details"><u>Asset Details</u></string>
+
+    <!--jMC-->
+    <string name="crash_notification.title">JMC Sample App Crashed</string>
+    <string name="crash_notification.text">Click to send a crash report.</string>
+    <string name="crash_notification.dialog_text">The sample app has crashed. Please click okay to send back the data to the developers. (You are awesome btw; just putting it out there.)</string>
+    <string name="crash_notification.dialog_request_user_email">Your email address:</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="token">Token</string>
+    <string name="how_to_get_token">How to get token?</string>
+    <string name="blue_string">1. Log in to <![CDATA[<u><font color=#0000FF>https://id.atlassian.com</font></u>]]></string>
+    <string name="loading_spinner">Loading...</string>
+
+    <string name="subscription_key">577fa38befda4baeb28bb6a304615237</string>
+    <string name="subscription_apiroot">https://westus.api.cognitive.microsoft.com/vision/v1.0</string>
+</resources>

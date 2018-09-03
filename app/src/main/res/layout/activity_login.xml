@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Enter Jira's Credential"
+        app:titleTextColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/welcome_img_df_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/logo"
+        android:visibility="visible"
+        />
+
+    <com.toyota.assetcare.utils.EditTextEmoticons
+        android:id="@+id/email_field"
+        style="@style/TextFieldWithWhiteBG"
+        android:layout_below="@+id/welcome_img_df_logo"
+        android:layout_marginTop="50dp"
+        android:hint="Jira login email"
+        android:minHeight="50dp"
+        android:gravity="center_vertical"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/next_gen_black_color"
+        android:textColorHint="@color/transparent_gray"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <com.toyota.assetcare.utils.EditTextEmoticons
+        android:id="@+id/password_field"
+        style="@style/TextFieldWithWhiteBG"
+        android:layout_below="@+id/email_field"
+        android:layout_marginTop="20dp"
+        android:minHeight="50dp"
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        android:hint="Jira API token"
+        android:inputType="textPassword"
+        android:textColor="@color/next_gen_black_color"
+        android:textColorHint="@color/transparent_gray"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/how_to_get_token_text"
+        android:layout_below="@id/password_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/gray35"
+        android:layout_marginTop="5dp"
+        android:text="@string/how_to_get_token"
+        android:layout_marginRight="15dp"
+        android:onClick="getTokenClick"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/how_to_get_token_text"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cancel_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/email_sign_in_button"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/toyota_red"
+            android:text="Save Jira credential"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:onClick="login"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

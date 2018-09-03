@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.toyota.assetcare.activity.AssetCreationActivity">
+    <RelativeLayout
+        android:id="@+id/back_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:background="@color/next_gen_black_color"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/back_button_login_screen"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:onClick="backButtonClick"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_normal"
+            />
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/assets"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/back_button_login_screen"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Search Assets"
+        app:titleTextColor="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/scan_qr_code_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="1"
+            android:background="@color/toyota_red"
+            android:onClick="onScanQRCodeClick"
+            android:text="Scan bar code"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/manual_search_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:background="@color/toyota_red"
+            android:onClick="onManualCreationButtonClick"
+            android:text="Manual create new issue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

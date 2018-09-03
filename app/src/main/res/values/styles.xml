@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+    </style>
+    <style name="ActionBarAppTheme" parent="android:Theme.Holo.Light">
+    </style>
+    <style name="TextFieldWithWhiteBG" parent="MatchWidth">
+        <item name="android:alpha">30</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/next_gen_black_color</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="MatchWidth" parent="Wrap">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ButtonStyle">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+</resources>

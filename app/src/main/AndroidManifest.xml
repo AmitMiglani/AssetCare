@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.toyota.assetcare">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.toyota.assetcare.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AssetSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AssetCreationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AssetDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.AssetCareIntentService"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HowToGetTokenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AssetTypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AssetRegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.SelectImageActivity"></activity>
+        <activity android:name=".activity.RecognizeActivity"></activity>
+    </application>
+
+</manifest>

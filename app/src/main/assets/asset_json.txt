@@ -1,0 +1,67 @@
+{
+	"assets": [{
+			"assetId": 1001,
+			"make": "Toyota",
+			"model": "Camry",
+			"isAvailable": 0,
+			"assetTypeId": 3901,
+			"allocationDetails": "Allocated to Mr. Smith till 10-Aug-2018"
+		},
+		{
+			"assetId": 1002,
+			"make": "Toyota",
+			"model": "Corolla",
+			"isAvailable": 1,
+			"assetTypeId": 3901,
+			"allocationDetails": ""
+		},
+		{
+			"assetId": 1003,
+			"make": "Lexus",
+			"model": "GS",
+			"isAvailable": 0,
+			"assetTypeId": 3901,
+			"allocationDetails": "Allocated to Mr. Peter till 12-Aug-2018"
+		},
+		{
+			"assetId": 1004,
+			"make": "Lexus",
+			"model": "GS Hybrid",
+			"isAvailable": 1,
+			"assetTypeId": 3901,
+			"allocationDetails": ""
+		},
+		{
+			"assetId": 1005,
+			"make": "Denzo",
+			"model": "Denzo dcm",
+			"isAvailable": 1,
+			"assetTypeId": 3902,
+			"allocationDetails": ""
+		},
+		{
+			"assetId": 1006,
+			"make": "Pioneer",
+			"model": "Pioneer dcm",
+			"isAvailable": 1,
+			"assetTypeId": 3902,
+			"allocationDetails": ""
+		},
+		{
+			"assetId": 1007,
+			"make": "Toyota HU",
+			"model": "Camry head unit",
+			"isAvailable": 1,
+			"assetTypeId": 3903,
+			"allocationDetails": ""
+		},
+		{
+			"assetId": 1008,
+			"make": "Lexus HU",
+			"model": "GS head unit",
+			"isAvailable": 1,
+			"assetTypeId": 3903,
+			"allocationDetails": ""
+		}
+	]
+}

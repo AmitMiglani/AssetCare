@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/back_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:background="@color/next_gen_black_color"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/back_button_login_screen"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:onClick="backButtonClick"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_normal"
+            />
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="How To Get Token?"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/back_button_login_screen"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="How to Get Token?"
+        app:titleTextColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/welcome_img_df_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/logo"
+        android:visibility="visible"
+        />
+
+    <com.toyota.assetcare.utils.TextViewGothamLight
+        android:id="@+id/instructions_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_img_df_logo"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/gray35"
+        android:textSize="16sp"
+        android:text="@string/blue_string"/>
+    <com.toyota.assetcare.utils.TextViewGothamLight
+        android:id="@+id/instructions_textview_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructions_textview"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/gray35"
+        android:textSize="16sp"
+        android:text="2. Click API tokens, then Create API token."/>
+    <com.toyota.assetcare.utils.TextViewGothamLight
+        android:id="@+id/instructions_textview_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructions_textview_two"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/gray35"
+        android:textSize="16sp"
+        android:text="3. Click on Copy to clipboard button to copy the token"/>
+
+
+</RelativeLayout>
